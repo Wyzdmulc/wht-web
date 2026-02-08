@@ -152,5 +152,26 @@
 
     updateLabourRow();
   </script>
+
+    <footer class="site-footer container" role="contentinfo" aria-label="Site copyright">
+  <div class="footer-inner">
+    <div class="attribution-group">
+      <p class="attribution">Created for the Balaka District Council Finance Department. This site is provided for informational use only and does not imply endorsement by the Balaka District Council</p>
+      <p class="attribution-note">Built for clarity and accessibility.</p>
+    </div>
+
+    <p class="copyright">
+      © <span id="copyright-year"></span> Wisdom. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const el = document.getElementById('copyright-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
 </body>
+
 </html>
