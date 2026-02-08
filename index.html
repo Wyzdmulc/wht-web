@@ -56,7 +56,25 @@
       <small>Built for clarity and accessibility.</small>
     </div>
   </footer>
+  <footer class="site-footer container" role="contentinfo" aria-label="Site copyright">
+  <div class="footer-inner">
+    <p class="copyright">
+      © <span id="copyright-year">2026</span> Wisdom. All rights reserved.
+    </p>
+    <p class="license">
+      Licensed under <a href="LICENSE">MIT</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    const el = document.getElementById('copyright-year');
+    if (el) el.textContent = new Date().getFullYear();
+  })();
+</script>
 
   <script src="script.js" defer></script>
 </body>
+
 </html>
