@@ -217,4 +217,45 @@ button:focus{
   overflow:hidden;
   clip:rect(1px,1px,1px,1px);
   white-space:nowrap;
+
+}
+
+.site-footer {
+  border-top: 1px solid var(--card-border);
+  padding: 1rem;
+  margin-top: 2rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.site-footer .footer-inner {
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:space-between;
+  max-width:var(--max-width);
+  margin:0 auto;
+  width:100%;
+}
+
+.attribution-group {
+  display:flex;
+  flex-direction:column;
+  gap:0.125rem;
+  margin:0;
+}
+
+.attribution, .attribution-note, .copyright {
+  color:var(--muted);
+  margin:0;
+  font-size:0.95rem;
+}
+
+/* On small screens stack attribution above copyright */
+@media (max-width:640px) {
+  .site-footer .footer-inner {
+    flex-direction:column;
+    align-items:flex-start;
+    gap:.5rem;
+  }
 }
