@@ -1,2 +1,63 @@
-# wht-web
-the program is for the calculation of Taxable amount from invoice amount, use it to calculate withholding tax and know how much to pay the supplier
+# WHT Web Calculator
+
+Calculate withholding tax (WHT) from invoice amounts instantly.
+
+## Overview
+
+**wht-web** is a simple, browser-based calculator for determining withholding tax obligations and the net amount due to suppliers. Enter your invoice amount and applicable WHT rate, and get instant results.
+
+## Quick Start
+
+1. Clone this repo:
+   ```bash
+   git clone https://github.com/Wyzdmulc/wht-web.git
+   ```
+
+2. Open `index.html` in your browser or serve locally:
+   ```bash
+   python3 -m http.server 8000
+   ```
+   Then visit `http://localhost:8000`
+
+3. Enter your invoice amount and WHT percentage, then calculate.
+
+## What is Withholding Tax?
+
+Withholding Tax (WHT) is a portion of payment withheld and remitted to tax authorities before paying a supplier. This tool calculates:
+
+- **Withholding Tax Amount** = Invoice Amount × (WHT Rate ÷ 100)
+- **Amount to Pay Supplier** = Invoice Amount − Withholding Tax Amount
+
+## Example
+
+| Item | Amount |
+|------|--------|
+| Invoice Amount | $1,000 |
+| WHT Rate | 5% |
+| **Withholding Tax** | **$50** |
+| **Amount to Pay** | **$950** |
+
+## Features
+
+✓ Real-time calculation  
+✓ Client-side only (no server required)  
+✓ Simple, clean interface  
+✓ Works on desktop and mobile  
+
+## Technology Stack
+
+- **HTML** (60.8%) — structure
+- **JavaScript** (28.8%) — calculations and interactivity
+- **CSS** (10.4%) — styling
+
+## Contributing
+
+Found a bug or have a feature idea? Open an issue or submit a pull request.
+
+## License
+
+See LICENSE file for details.
+
+---
+
+**Need help?** Open an issue on GitHub: https://github.com/Wyzdmulc/wht-web/issues
