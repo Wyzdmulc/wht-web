@@ -38,7 +38,19 @@ Withholding Tax (WHT) is a portion of payment withheld and remitted to tax autho
 | **Amount to Pay** | **$950** |
 
 ## Purpose
+
 The purpose of the website is to help institutions easily calculate Withholding tax. it also help uncover the calculation of VAT, PPDA, and in some cases Retention, NCIC, and Tourism levy. this will ensure accurate tax calculation hence paying the supplier the required amount and submit to MRA the required tax returns. it is made to be simple to use that even those who doesn't know or understand the tax calculations may be able to use, and make proper transactions.
+
+## What you will get
+
+Depending on your selected scenario, you will be able to produce the following
+✓ Taxable Amount - Basis for calculating all taxes
+✓ VAT Amount
+✓ PPDA Amount
+✓ Tourism Levy Amount
+✓ WIthholding tax Amount
+✓ NCIC Amount
+✓ Retention
 
 ## Features
 
@@ -57,9 +69,6 @@ The purpose of the website is to help institutions easily calculate Withholding 
 
 Found a bug or have a feature idea? Open an issue or submit a pull request.
 
-## License
-
-See LICENSE file for details.
 
 ---
 
