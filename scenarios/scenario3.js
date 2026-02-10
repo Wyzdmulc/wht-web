@@ -27,9 +27,9 @@ export function computeScenario3({
   const ncic = toNumber(ncicRate) / 100;
   const wht = toNumber(whtRate) / 100;
 
-  // Reverse the invoice to get taxable amount before VAT, retention, PPDA, NCIC
-  // divisor = 1 + vat + retention + ppda + ncic
-  const divisor = 1 + vat + retention + ppda + ncic;
+  // Reverse the invoice to get taxable amount before VAT, PPDA, NCIC
+  // divisor = 1 + vat + ppda + ncic
+  const divisor = 1 + vat + ppda + ncic;
   if (divisor <= 0) throw new Error('Invalid rate configuration');
 
   const taxableAmountRaw = invoiceAmt / divisor;
@@ -84,4 +84,5 @@ console.log(computeScenario3({ invoice: 1245 }));
 // NCIC ≈ 10.00
 // WHT ≈ 100.00
 // payContractor ≈ 1245 - 50 - 10 - 10 - 100 = 1075.00
+
 */
